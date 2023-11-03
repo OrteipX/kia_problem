@@ -43,9 +43,7 @@
     .image-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      /* Creates a 3-column grid */
       gap: 10px;
-      /* Adjust the gap between images */
     }
 
     .image {
@@ -63,11 +61,37 @@
     h3 {
       text-align: center;
     }
+
+    @media screen and (max-width: 600px) {
+      .image-grid {
+        grid-template-columns: 1fr;
+        /* Display images in a single column on screens with a max width of 600px */
+      }
+    }
   </style>
 </head>
 
 <body>
   <h1>My Complaint</h1>
+  <br />
+  <h2>Dealer Information:</h2>
+  <p><strong>London KIA</strong></p>
+  <p>Address: 1135 Wharncliffe Rd S</p>
+  <p>Location: London, ON, N6L 1J9</p>
+
+  <br />
+  <h2>Dealer Location:</h2>
+  <div style="width: 100%; height: 300px;">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.763880911567!2d-81.2630782!2d42.9357918!3m2!1f0!2f0!4f0!5f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef16480fc1b33:0xc5b459be9918f1d8!2sLondon%20Kia,%201135%20Wharncliffe%20Rd%20S,%20London,%20ON%20N6L%201J9!5e0!3m2!1sen!2sca!4v1643896173611!5m2!1sen!2sca"></iframe>
+  </div>
+  <div>
+    <p><a
+        href="https://www.google.com/maps/place/London+Kia,+1135+Wharncliffe+Rd+S,+London,+ON+N6L+1J9/@42.9357918,-81.2630782,19z/data=!4m6!3m5!1s0x882ef16480fc1b33:0xc5b459be9918f1d8!8m2!3d42.9359482!4d-81.2638427!16s%2Fg%2F1vg_dhnd"
+        target="_blank">View Dealer Location on Google Maps</a></p>
+  </div>
+
+  <br />
   <h2>Dear Sirs,</h2>
   <p>I am writing this letter to express my profound and utmost dissatisfaction with the experience I have been having
     at the London KIA - ON dealership regarding my vehicle, a 2022 Kia Sorento SX with VIN# 5XYRKDLF6NG093438.</p>
@@ -123,27 +147,33 @@
     any issues. Allow me to clarify, I am not surprised by the technician's feedback at all, as the vehicle has remained
     immobilized and untouched for 3 days, as evidenced in the attached photos.</p>
 
-  <div>
-    <h3>Image Gallery</h3>
-    <div class="image-grid">
-      <div class="image">
+  <div class="image-grid">
+    <div class="image">
+      <a href="./car_at_dealer_1.PNG" target="_blank">
         <img src="./car_at_dealer_1.PNG" alt="Image 1">
-      </div>
-      <div class="image">
+      </a>
+    </div>
+    <div class="image">
+      <a href="./car_at_dealer_2.PNG" target="_blank">
         <img src="./car_at_dealer_2.PNG" alt="Image 2">
-      </div>
-      <div class="image">
+      </a>
+    </div>
+    <div class="image">
+      <a href="./car_at_dealer_3.PNG" target="_blank">
         <img src="./car_at_dealer_3.PNG" alt="Image 3">
-      </div>
-      <div class="image">
+      </a>
+    </div>
+    <div class="image">
+      <a href="./car_at_dealer_4.PNG" target="_blank">
         <img src="./car_at_dealer_4.PNG" alt="Image 4">
-      </div>
-      <div class="image">
+      </a>
+    </div>
+    <div class="image">
+      <a href="./car_at_dealer_5.PNG" target="_blank">
         <img src="./car_at_dealer_5.PNG" alt="Image 5">
-      </div>
+      </a>
     </div>
   </div>
-
 
   <h2>Resolution Request:</h2>
   <p>I hope that this complaint will be handled with the seriousness and professionalism it deserves and that the
